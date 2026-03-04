@@ -5,8 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Gowun Batang"', 'Georgia', 'serif'],
+                        sans: ['system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        cream: '#fdfcf8',
+                        beige: '#f5f1e8',
+                        charcoal: '#4a4a4a',
+                        'dark-text': '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
+<body class="font-sans">
     
     <div class="sticky top-0 border-b-3 border-gray-300 ">
 
@@ -17,6 +39,13 @@
             <li><a href="#">Contact</a></li>
         </nav>
     </div>
-    
+
+    <div class="Announcement bg-[#F6F0E4] m-4 max-w-100% p-3 rounded-xl flex justify-between">
+
+        <p>Announcement: Spring ASB Election is now live for voting</p>
+
+        <a class="border-b-2 flex text-right text-left text-end" href="#Survey">Survey here</a>
+
+    </div>
 </body>
 </html>
